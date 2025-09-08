@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBank - Smart Banking</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Currency Ticker -->
+    <div class="currency-ticker text-white">
+        <div class="ticker-wrap">
+            <div class="ticker" >
+                <span>USD/INR: ₹83.10 ▲0.12%</span>
+                <span>EUR/INR: ₹91.85 ▼0.05%</span>
+                <span>GBP/INR: ₹108.40 ▲0.20%</span>
+                <span>JPY/INR: ₹0.56 ▼0.03%</span>
+                <span>BTC/INR: ₹6,890,000 ▲2.5%</span>
+                <span>ETH/INR: ₹350,000 ▲1.2%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">MyBank</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="btn btn-primary mt-2" href="#openAccountForm">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero py-5 text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Bank Smarter with MyBank</h1>
+                    <p class="lead text-muted">Instant transfers, secure savings, and 24/7 customer support. Your money,
+                        your control.</p>
+                    <a href="#openAccountForm" class="btn btn-primary btn-lg me-2">Open Account</a>
+                    <a href="#about" class="btn btn-outline-secondary btn-lg">Learn More</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src=https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Banking App" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Features Section -->
+    <!-- <section id="features" class="features py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Why Choose MyBank?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-4 h-100 shadow-sm">
+                        <div class="mb-3 fs-1 text-primary">💸</div>
+                        <h5 class="fw-bold">Instant Transfers</h5>
+                        <p class="text-muted">Send and receive money instantly with no hidden fees.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 h-100 shadow-sm">
+                        <div class="mb-3 fs-1 text-success">🔒</div>
+                        <h5 class="fw-bold">Bank-Grade Security</h5>
+                        <p class="text-muted">Your funds and data are protected with top-tier encryption.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 h-100 shadow-sm">
+                        <div class="mb-3 fs-1 text-warning">🌍</div>
+                        <h5 class="fw-bold">Global Access</h5>
+                        <p class="text-muted">Access your account from anywhere in the world, anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Why Choose MyBank (Carousel) -->
+            <section id="features" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="fw-bold text-center mb-4">Why Choose MyBank?</h2>
+                    <p class="text-center text-muted mb-5">
+                        Experience the future of banking with secure, smart, and customer-focused services.
+                    </p>
+
+                    <div id="whyChooseCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="card h-100 text-center shadow-sm border-0">
+                                            <div class="card-body">
+                                                <i class="bi bi-shield-lock text-primary fs-1 mb-3"></i>
+                                                <h5 class="fw-bold">Secure Banking</h5>
+                                                <p class="text-muted">Your funds and data are protected with top-notch
+                                                    encryption technology.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100 text-center shadow-sm border-0">
+                                            <div class="card-body">
+                                                <i class="bi bi-phone text-primary fs-1 mb-3"></i>
+                                                <h5 class="fw-bold">Mobile Friendly</h5>
+                                                <p class="text-muted">Access your account anytime, anywhere with our
+                                                    intuitive mobile app.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100 text-center shadow-sm border-0">
+                                            <div class="card-body">
+                                                <i class="bi bi-piggy-bank text-primary fs-1 mb-3"></i>
+                                                <h5 class="fw-bold">Higher Savings Rates</h5>
+                                                <p class="text-muted">Grow your savings faster with our competitive
+                                                    interest rates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="card h-100 text-center shadow-sm border-0">
+                                            <div class="card-body">
+                                                <i class="bi bi-lightning-charge text-primary fs-1 mb-3"></i>
+                                                <h5 class="fw-bold">Instant Transactions</h5>
+                                                <p class="text-muted">Send and receive money instantly without hidden
+                                                    delays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100 text-center shadow-sm border-0">
+                                            <div class="card-body">
+                                                <i class="bi bi-people text-primary fs-1 mb-3"></i>
+                                                <h5 class="fw-bold">Dedicated Support</h5>
+                                                <p class="text-muted">Our 24/7 customer support is always here to help
+                                                    you.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100 text-center shadow-sm border-0">
+                                            <div class="card-body">
+                                                <i class="bi bi-globe text-primary fs-1 mb-3"></i>
+                                                <h5 class="fw-bold">Global Access</h5>
+                                                <p class="text-muted">Enjoy banking services no matter where you are in
+                                                    the world.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#whyChooseCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#whyChooseCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+    <!-- Stats -->
+    <section class="stats py-5 text-center text-white" style="background-color: #0d6efd;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="fw-bold">1M+</h3>
+                    <p>Active Customers</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="fw-bold">₹500Cr+</h3>
+                    <p>Transactions Processed</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="fw-bold">4.9★</h3>
+                    <p>Customer Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- About Us -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFua2luZ3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="About MyBank" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3">About MyBank</h2>
+                    <p class="text-muted">
+                        Founded in 2010, <strong>MyBank</strong> has grown into one of India’s most trusted and
+                        customer-focused banks.
+                        We combine traditional banking values with modern technology to deliver a secure, fast, and
+                        personalized banking
+                        experience. Our services cover everything from personal savings accounts to corporate financial
+                        solutions,
+                        all backed by advanced security protocols.
+                    </p>
+                    <p class="text-muted">
+                        At MyBank, we believe that banking should be simple, transparent, and accessible to everyone.
+                        Our 24/7 online and mobile banking platforms empower customers to manage their finances anytime,
+                        anywhere.
+                        With a strong branch network across the country and a dedicated team of financial experts,
+                        we are here to support you at every step of your financial journey.
+                    </p>
+                    <p class="text-muted">
+                        Our mission is to foster financial inclusion and innovation, ensuring that every
+                        customer—whether an
+                        individual, small business owner, or large enterprise—has access to the tools and resources
+                        they need to thrive in today’s economy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- FAQ -->
+    <section id="faq" class="faq py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                            How do I open an account?
+                        </button>
+                    </h2>
+                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can open an account online by clicking the "Open Account" button and filling in the
+                            form.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q2">
+                            Is my money safe?
+                        </button>
+                    </h2>
+                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes! We use bank-grade encryption and are fully compliant with security regulations.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q3">
+                            How fast are transfers?
+                        </button>
+                    </h2>
+                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Most transfers happen instantly, even between different banks.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q4">
+                            Can I access my account internationally?
+                        </button>
+                    </h2>
+                    <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, you can access your account from anywhere in the world with an internet connection.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q5">
+                            What if I need help?
+                        </button>
+                    </h2>
+                    <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our customer support team is available 24/7 via chat, email, or phone.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q6">
+                            Are there any fees?
+                        </button>
+                    </h2>
+                    <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We offer zero-fee accounts with no minimum balance requirements. Some premium services may
+                            have fees.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q7">
+                            How do I close my account?
+                        </button>
+                    </h2>
+                    <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can close your account by contacting our customer support team or through the app.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q8">
+                            Can I use MyBank for business?
+                        </button>
+                    </h2>
+                    <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we offer tailored solutions for small businesses and enterprises.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q9">
+                            How do I reset my password?
+                        </button>
+                    </h2>
+                    <div id="q9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can reset your password through the "Forgot Password" link on the login page.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q10">
+                            Do you offer loans?
+                        </button>
+                    </h2>
+                    <div id="q10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we provide personal and business loans with competitive interest rates.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q11">
+                            How do I update my personal information?
+                        </button>
+                    </h2>
+                    <div id="q11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can update your personal information through the app or by contacting customer support.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Carousel -->
+    <section class="testimonials py-5" style="background-color: #0d6efd;" id="reviews">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4 text-light">What Our Customers Say</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-center">
+                                    <p class="fst-italic">"MyBank is the best! Instant transfers and amazing support."
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                    <small>- Priya Sharma</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-center">
+                                    <p class="fst-italic">"Safe, fast, and easy to use. I recommend it to everyone."</p>
+                                    <div class="text-warning">★★★★★</div>
+                                    <small>- Arjun Mehta</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-center">
+                                    <p class="fst-italic">"Best banking app I've ever used! 24/7 access is a lifesaver."
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                    <small>- Sneha Kapoor</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item ">
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-center">
+                                    <p class="fst-italic">"Fastest loan approval process I have ever experienced."</p>
+                                    <div class="text-warning">★★★★★</div>
+                                    <small>- Rohan Verma</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-center">
+                                    <p class="fst-italic">"I love the clean UI and simple navigation, Loved it and
+                                        looking forward."</p>
+                                    <div class="text-warning">★★★★★</div>
+                                    <small>- Meena Iyer</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-center">
+                                    <p class="fst-italic">"Security is top-notch. I feel safe keeping my savings here."
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                    <small>- Vinay Kulkarni</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-center">
+                                    <p class="fst-italic">"Their mobile app makes managing my accounts super easy."</p>
+                                    <div class="text-warning">★★★★★</div>
+                                    <small>- Kavita Rao</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-center">
+                                    <p class="fst-italic">"Quick customer support and reliable transactions every time."
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                    <small>- Anil Gupta</small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-center">
+                                    <p class="fst-italic">"I switched from my old bank and couldn't be happier with
+                                        MyBank."</p>
+                                    <div class="text-warning">★★★★★</div>
+                                    <small>- Priya Singh</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Controls (floating on sides) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Open Account Section -->
+    <section id="open-account" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Form -->
+                <div class="col-lg-6" id="openAccountForm">
+                    <div class="card p-4 ">
+                        <h3 class="mb-4 text-center">Open Your Account</h3>
+                        <form>
+                            <div class="row g-2">
+                                <!-- Full Name & Email -->
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Full Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email Address">
+                                </div>
+
+                                <!-- Phone & Date of Birth -->
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control">
+                                </div>
+
+                                <!-- Account Type & City -->
+                                <div class="col-md-6">
+                                    <select class="form-select">
+                                        <option selected>Choose Account Type</option>
+                                        <option>Savings</option>
+                                        <option>Current</option>
+                                        <option>Business</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="City">
+                                </div>
+
+                                <!-- Message (Full Width) -->
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                                </div>
+
+                                <!-- Submit -->
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-primary px-4">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="col-lg-6 text-center p-5">
+                    <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fGJhbmt8ZW58MHx8MHx8fDA%3D"
+                        class="img-fluid rounded " alt="Open Account">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Company Info -->
+                <div class="col-md-4">
+                    <h4 class="fw-bold text-primary mb-3">MyBank</h4>
+                    <p class="text-muted">
+                        MyBank is your trusted partner in secure and smart banking.
+                        We provide innovative solutions to manage your money with ease.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#features" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="#reviews" class="text-light text-decoration-none">reviews</a></li>
+                        <li><a href="#faq" class="text-light text-decoration-none">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <p><i class="bi bi-geo-alt-fill text-primary"></i> 123 MyBank Street, Hyderabad, India</p>
+                    <p><i class="bi bi-telephone-fill text-primary"></i> +91 98765 43210</p>
+                    <p><i class="bi bi-envelope-fill text-primary"></i> support@mybank.com</p>
+                </div>
+            </div>
+
+
+            
+
+
+            <hr class="border-light mt-4">
+
+            <!-- Bottom Footer -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 small text-white">
+                        © 2025 MyBank. All Rights Reserved. | Designed with ❤️ in India.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
